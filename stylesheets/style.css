@@ -44,7 +44,6 @@ nav {
 
 .logo {
   width: 100%;
-  /* height: 30%; */
   background-color: var(--frntBlack1);
   display: flex;
   flex-direction: column;
