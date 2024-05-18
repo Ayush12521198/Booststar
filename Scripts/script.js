@@ -1,4 +1,3 @@
-console.log("Rahul");
 const likeIcons = document.querySelectorAll(".like");
 var likeNum = 0;
 
