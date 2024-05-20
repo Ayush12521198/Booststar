@@ -34,7 +34,7 @@ body {
 nav {
   width: 25%;
   height: 100%;
-    padding: 0px 10px 10px 10px;
+  padding: 0px 10px 10px 10px;
 }
 
 .left {
@@ -44,7 +44,6 @@ nav {
 
 .logo {
   width: 100%;
-  /* height: 30%; */
   background-color: var(--frntBlack1);
   display: flex;
   flex-direction: column;
@@ -57,6 +56,11 @@ nav {
 .logo > i {
   font-size: 1.3rem;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.logo > i:hover {
+  color: var(--greenTheme);
 }
 
 .logo > i:nth-child(1) {
@@ -164,8 +168,8 @@ nav {
 }
 
 .songInfo {
-    width: 40%;
-    height: 50px;
+  width: 40%;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -207,43 +211,40 @@ main {
   width: 75%;
   height: 100%;
   padding: 0px 0px 10px 0px;
- 
 }
 
 .right {
   width: 100%;
   height: 85%;
   background: linear-gradient(to bottom, #57536e, transparent);
-   overflow-y: scroll;
+  overflow-y: scroll;
   scrollbar-width: none;
   position: relative;
-  /* background-color: red; */
 }
 
-.rgtHead{
+.rgtHead {
   width: 75%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: #504b69;
-margin-bottom: 20px;
-position: fixed;
-left: 25%;
-top: 0px;
-z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #504b69;
+  margin-bottom: 20px;
+  position: fixed;
+  left: 25%;
+  top: 0px;
+  z-index: 10;
 }
 
-.search{
+.search {
   width: 50%;
   height: 50px;
-  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
   visibility: hidden;
 }
 
-#srchHere{
+#srchHere {
   width: 85%;
   height: 40px;
   border-radius: 28px 0px 0px 28px;
@@ -255,7 +256,7 @@ z-index: 10;
   font-size: 1.1rem;
 }
 
-.srchIcon{
+.srchIcon {
   width: 10%;
   height: 40px;
   border-radius: 0px 28px 28px 0px;
@@ -265,16 +266,15 @@ z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.srchIcon>i{
+.srchIcon > i {
   color: var(--lightText);
   margin: 12px;
   font-size: 1.3rem;
 }
 
-.accountIcon{
+.accountIcon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -286,44 +286,127 @@ z-index: 10;
   cursor: pointer;
 }
 
-.accountIcon>i{
+.accountIcon > i {
   font-size: 1.1rem;
 }
 
-.rgtBanner{
-  width: 97%;
-  height: 70%;
-  transform: translateY(70px);
-  margin: auto;
-  /* background-color: blue; */
+.profileBoxMain {
+  width: 300px;
+  height: 400px;
+  background-color: var(--frntBlack2);
+  border: 2px solid var(--greenTheme);
+  border-radius: 14px 14px 0px 0px;
+  position: fixed;
+  bottom: 89px;
+  right: 40px;
+  z-index: 20;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(500px);
+  transition: 0.3s ease-in-out;
 }
 
-.rgtBanner>img{
+.profileBox {
+  width: 100%;
+  height: 40%;
+  background-color: var(--frntBlack1);
+  border-radius: 14px 14px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profileBoxImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  /* background-color: var(--frntBlack2); */
+}
+
+.profileBoxImg > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  cursor: pointer;
+}
+
+.profileBoxInfo {
+  width: 50%;
+  height: 70%;
+  overflow: hidden;
+  /* background-color: rgb(48, 48, 43); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.profileBoxInfo > h4 {
+  color: var(--lightText);
+}
+
+.profileMoreOpt {
+  width: 100%;
+  height: 55%;
+  background-color: var(--frntBlack1);
+  border-radius: 0px 0px 14px 14px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.profileMoreOpt > h5 {
+  cursor: pointer;
+}
+
+.rgtBanner {
+  width: 97%;
+  height: 70%;
+  max-height: 400px;
+  transform: translateY(70px);
+  margin: auto;
+}
+
+.rgtBanner > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
-
 }
 
-.frstHeading{
+.frstHeading {
   margin-top: 110px;
-  margin-left: 15px;
+  margin-left: 50px;
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
 
-.cardMain{
+.sndHeading {
+  margin-top: 170px;
+  margin-left: 50px;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cardMain {
   width: 97%;
   height: 400px;
   margin: auto;
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
- gap: 35px;
+  gap: 35px;
 }
 
-.cardBack{
+.cardBack {
   width: 19%;
   height: 68%;
   min-width: 187.833px;
@@ -336,31 +419,29 @@ z-index: 10;
   justify-content: space-between;
   padding: 10px;
   cursor: pointer;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-.cardBack:hover{
+.cardBack:hover {
   background-color: #4c4c59;
 }
 
-.cardImg{
+.cardImg {
   width: 98%;
   height: 65%;
   border-radius: 4px;
-  /* margin: auto; */
-  /* background-color: blue; */
   box-shadow: 0px 0px 15px 2px rgb(0, 0, 0);
   position: relative;
 }
 
-.cardImg>img{
+.cardImg > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
 }
 
-.cardPlayBtn{
+.cardPlayBtn {
   width: 40px;
   height: 40px;
   background-color: var(--greenTheme);
@@ -372,43 +453,203 @@ z-index: 10;
   right: 5px;
   bottom: -5px;
   opacity: 0;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-.cardBack:hover .cardPlayBtn{
+.cardBack:hover .cardPlayBtn {
   opacity: 1;
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-.cardInfo{
+.cardInfo {
   width: 98%;
   height: 30%;
-  /* background-color: black; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
 }
 
-.cardInfo>h3{
+.cardInfo > h3 {
   font-size: 1rem;
   font-weight: 500;
   color: var(--darkText);
 }
 
-.cardInfo>h4{
-  font-size: .9rem;
+.cardInfo > h4 {
+  font-size: 0.9rem;
   font-weight: 500;
-color: var(--lightText);
-
+  color: var(--lightText);
 }
 
-.player{
-    width: 100vw;
-    height: 90px;
-    background-color: var(--frntBlack2);
-    position: absolute;
+.player {
+  width: 100vw;
+  height: 90px;
+  background-color: var(--frntBlack2);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-top: 2px solid var(--greenTheme);
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 30;
+}
+
+.songNameMain {
+  width: 23%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.playerSongImg {
+  width: 28%;
+  height: 100%;
+}
+
+.playerSongImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.playerSongInfo {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.playerSongInfo > h5 {
+  color: var(--lightText);
+}
+
+.playBtnMain {
+  width: 25%;
+  height: 100%;
+  padding: 3px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playBtnIcon {
+  width: 100%;
+  height: 46%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playBtnIcon > i {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.playBtnIcon > i:hover {
+  transform: scale(1.2);
+  color: var(--greenTheme);
+}
+
+.playBtnTime {
+  width: 100%;
+  height: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playBtnTime > span {
+  font-size: 0.7rem;
+}
+
+.timeLine {
+  width: 70%;
+  height: 4px;
+  background-color: var(--lightText);
+  cursor: pointer;
+  position: relative;
+}
+
+.timeLineFill {
+  width: 10px;
+  height: 4px;
+  background-color: var(--greenTheme);
+  cursor: pointer;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  animation-duration: 95s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes timeFillAni {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.timeCir {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--greenTheme);
+  position: absolute;
+  left: 0px;
+  bottom: -100%;
+  cursor: pointer;
+  animation-duration: 95s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes timeCirAni {
+  from {
     left: 0px;
-    bottom: 0px;
-    border-top: 2px solid var(--greenTheme);
+    bottom: -100%;
+  }
+
+  to {
+    left: 100%;
+    bottom: -100%;
+  }
+}
+
+.volMain {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.volMain i {
+  cursor: pointer;
+}
+
+.volLineMain {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.volLine {
+  width: 0px;
+  height: 4px;
+  background-color: var(--lightText);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
