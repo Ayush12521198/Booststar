@@ -1,3 +1,4 @@
+
 //  Logic for like btn start
 const likeIcons = document.querySelectorAll(".like");
 var likeNum = 0;

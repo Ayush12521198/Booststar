@@ -31,12 +31,14 @@ body {
   position: relative;
 }
 
+/* Navigation Section Start */
 nav {
   width: 25%;
   height: 100%;
   padding: 0px 10px 10px 10px;
 }
 
+/* Logo, Home and Search start*/
 .left {
   width: 100%;
   height: 100%;
@@ -77,7 +79,9 @@ nav {
 .logo > i > span > span {
   color: var(--greenTheme);
 }
+/* Logo, Home and Search end*/
 
+/* Song List start */
 .songLib {
   padding: 5px;
   width: 100%;
@@ -187,7 +191,9 @@ nav {
   right: 10%;
   cursor: pointer;
 }
+/* Song list end */
 
+/* Other links Start */
 .links {
   width: 100%;
   border-radius: 4px;
@@ -206,7 +212,9 @@ nav {
   color: var(--lightText);
   font-size: 0.8rem;
 }
+/* Other links end */
 
+/* Main body content start */
 main {
   width: 75%;
   height: 100%;
@@ -527,6 +535,7 @@ main {
   justify-content: space-evenly;
   overflow: hidden;
 }
+/* Main body content end */
 
 .playerSongInfo > h5 {
   color: var(--lightText);
@@ -652,4 +661,15 @@ main {
   background-color: var(--lightText);
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  
+/* Player Start */
+.player{
+    width: 100vw;
+    height: 90px;
+    background-color: var(--frntBlack2);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-top: 2px solid var(--greenTheme);
+  /* Player end */
 }
